@@ -95,17 +95,28 @@ i {
     color: var(--azul);
 }
 
-.top-cta, .top-cta > *{
+.top-cta, .top-cta > * {
     display: flex;
     align-items: center;
 }
 
-.top-cta {
-    gap: 30px;
-}
-
 .top-cta > * {
     gap: 10px;
+}
+
+.top-cta .correo{
+    border-right: 1px solid var(--blanco);
+    padding-right: 25px;
+}
+
+.top-cta .telefono{
+    border-left: 1px solid var(--blanco);
+    padding-left: 25px;
+}
+
+.correo,
+.telefono {
+    cursor: pointer;
 }
 
 
@@ -114,6 +125,7 @@ i {
 .site-logo {
     display: flex;
     margin-left: -8px;
+    cursor: pointer;
 }
 
 .transparencia {
@@ -152,6 +164,10 @@ i {
     height:10%;
     position:absolute;
     width:10%;
+}
+
+.construction {
+    display: none;
 }
 
 .btn-text {
@@ -203,7 +219,7 @@ i {
 
 .main-servicios {
     display: flex;
-    padding-bottom: 10rem;
+    padding-bottom: 7.2rem;
     margin-top: 4rem;
     gap: 15px;
     margin-inline: 0.5rem;
@@ -227,14 +243,14 @@ i {
 .gas h2,
 .aseo h2,
 .circulacion h2{
-    padding-inline: 2.3rem;
+    padding-inline: 6rem;
 }
 
 .sitio p,
 .gas p,
 .aseo p,
 .circulacion p{
-    padding-inline: 1.4rem;
+    padding-inline: 3.9rem;
 }
 
 .servicio-icon {
@@ -253,87 +269,156 @@ i {
     gap: 15px;
 }
 
-.redes-sociales-main {
+
+.footer {
+    display: none;
+}
+
+.redes-sociales-footer,
+.top-cta-footer {
     display: none;
 }
 
 /* Media queries */
 
-@media (max-width: 1383px) {
 
-    .aseo h2 {
-        padding-inline: 1rem;
-    }
-
-    .gas p,
-    .sitio p{
-        padding-inline: 1rem;
-    }
-}
-
-@media  (max-width: 1320px) {
-    .sitio p,
-    .circulacion p,
-    .aseo p {
-        padding-inline: 2.2rem;
-    }
-
-    .gas p {
-        padding-inline: 1.5rem;
-    }
-}
-
-@media  (max-width: 1250px) {
+@media  (max-width: 1280px) {
     .servicio {
         font-size: 1rem;
     }
 
-    .sitio p,
-    .circulacion p,
-    .aseo p {
-        padding-inline: 2.4rem;
-    }
-
     .gas p {
-        padding-inline: 1.2rem;
+        padding-inline: 2rem;
     }
-}
-
+} 
 
 
 @media  (max-width: 1180px) {
     
-    .main-servicios {
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        gap: 15px; 
-    }
 
     .transparencia {
         display: none;
     }
 
-    .redes-sociales {
-        display: none;
+    .construction {
+        display: block;
     }
 
-    .redes-sociales-main {
+    .construction i{
+        color: var(--azul);
+        font-size: 2.5rem;
+    }
+
+    .main-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-text p {
+        font-size: 1rem;
+    }
+
+    .main-servicios {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 15px; 
+        padding-bottom: 4rem;
+    }
+
+    .gas {
+        grid-column: 1/3;
+    }
+
+    .sitio h2,
+    .gas h2,
+    .circulacion h2{
+        padding-inline: 0.5rem;
+    }
+
+    .sitio p,
+    .circulacion p {
+        padding-inline: 1rem;
+    }
+    
+    .gas p {
+        padding-inline: 7rem;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footer .container {
+        background: var(--azul);
+    }
+
+    .transparencia-footer {
+        padding: 1rem 0;
         display: flex;
-        gap: 15px;
-    }
-
-    .redes-sociales-main .icon-container {
-        background-color: var(--azul);
-    }
-
-    .redes-sociales-main .icon-container i {
-        color: var(--blanco);
-    }
-
-    .top-cta {
-        justify-content: space-between;
-        width: 100%;
+        justify-content: center;
+        gap: 20px;
     }
 }
 
+@media  (max-width: 868px) {
+    
+    .transparencia-footer {
+        flex-direction: column;
+    }
+
+}
+
+@media  (max-width: 672px) {
+    
+    .top-header {
+        display: none;
+    }
+
+    .main-text h1 {
+        font-size: 2rem;
+    }
+
+    .sitio h2,
+    .gas h2,
+    .circulacion h2{
+        padding-inline: 2rem;
+    }
+
+    .sitio p,
+    .circulacion p,
+    .gas p {
+        padding-inline: 3rem;
+    }
+
+    .main-servicios {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+    }
+
+    .gas {
+        grid-column: auto;
+    }
+
+    .redes-sociales-footer {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        gap: 15px;
+        border-bottom: 1px solid #DCDCDC;
+    }
+
+    .top-cta-footer {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .top-cta-footer > * {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+}

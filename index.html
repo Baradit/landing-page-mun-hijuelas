@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Kit Awesome Icons -->
-    <script src="https://kit.fontawesome.com/8ebbbbb706.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/fontawesome.min.css">
 
     <!-- Hoja de estilo -->
     <link rel="stylesheet" href="/style/main.css">
@@ -28,35 +29,32 @@
         <section class="top-header">
             <div class="container d-flex justify-content-between align-center">
                 <div class="redes-sociales">
-                    <span class="icon-container">
+                    <a href="https://www.facebook.com/municipalidaddehijuelas" class="icon-container">
                         <i class="fa-brands fa-facebook"></i>
-                    </span>
-                    <span class="icon-container">
-                        <i class="fa-brands fa-twitter"></i>
-                    </span>
-                    <span class="icon-container">
+                    </a>
+                    <a href="https://www.instagram.com/muni_hijuelas/" class="icon-container">
                         <i class="fa-brands fa-instagram"></i>
-                    </span>
+                    </a>
                 </div>
                 <div class="top-cta">
-                    <div class="correo">
+                    <a href="mailto:comunicaciones@hijuelas.cl" class="correo">
                         <i class="fa-solid fa-envelope"></i> 
-                        <span>comunicaciones@hijuelas.cl</span>
-                    </div>
-                    <div class="telefono">
+                        comunicaciones@hijuelas.cl
+                    </a>
+                    <a href="tel:332290100" class="telefono">
                         <i class="fa-solid fa-phone"></i> 
-                        <span>(33) 2290100</span>
-                    </div>
+                        (33) 2290100
+                    </a>
                 </div>
             </div>   
         </section>
         <section class="main-header">
             <div class="container d-flex justify-content-between align-center">
-                <div class="site-logo">
-                    <img src="/assets/Wordpress/logo-municipalidad-hijuelas-azul2.png" alt="">
-                </div>
+                <a href="#" class="site-logo">
+                    <img src="/assets/Wordpress/logo-municipalidad-hijuelas-azul2.png" alt="logo-municipalidad-hijuelas">
+                </a>
                 <div class="transparencia">
-                    <div class="transparencia-btn">
+                    <a href="https://www.leylobby.gob.cl/instituciones/mu102" class="transparencia-btn">
                         <div class="btn-icon">
                             <i class="fa-solid fa-file-signature"></i>
                         </div>
@@ -64,8 +62,8 @@
                             <span>Solicitud de audiencias</span>
                             <span>Ley del Lobby</span>
                         </div>
-                    </div>
-                    <div class="transparencia-btn">
+                    </a>
+                    <a href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU102" class="transparencia-btn">
                         <div class="btn-icon">
                             <i class="fa-solid fa-file-lines"></i>
                         </div>
@@ -73,8 +71,8 @@
                             <span>Transparencia Activa</span>
                             <span>Ley de Transparencia</span>
                         </div>
-                    </div>
-                    <div class="transparencia-btn">
+                    </a>
+                    <a href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU102" class="transparencia-btn">
                         <div class="btn-icon">
                             <i class="fa-solid fa-file"></i>
                         </div>
@@ -82,18 +80,10 @@
                             <span>Solicitar información</span>
                             <span>Ley de Transparencia</span>
                         </div>
-                    </div>
+                    </a>
                 </div> 
-                <div class="redes-sociales-main">
-                    <span class="icon-container">
-                        <i class="fa-brands fa-facebook"></i>
-                    </span>
-                    <span class="icon-container">
-                        <i class="fa-brands fa-twitter"></i>
-                    </span>
-                    <span class="icon-container">
-                        <i class="fa-brands fa-instagram"></i>
-                    </span>
+                <div class="construction">
+                    <i class="fa-solid fa-helmet-safety"></i>
                 </div>
             </div>
         </section>
@@ -105,17 +95,17 @@
                 <h1>Página web en remodelación</h1>
                 <p>Estamos trabajando en una nueva versión para nuestra página web. Mientras tanto, abajo encontrarás distintas opciones para poder acceder a nuestros servicios, trámites y más.</p>
             </div>
-            <section class="main-servicios sitio">
-                <div class="servicio">
+            <section class="main-servicios ">
+                <a href="https://www.hijuelas.cl/index.php" class="servicio sitio">
                     <i class="fa-solid fa-globe servicio-icon"></i>
                     <h2>Sitio web completo</h2>
-                    <p>Para acceder a nuestro sitio web completo (antiguo), haz click en el siguiente botón. </p>
+                    <p>Para acceder a nuestro sitio web completo, haz click en el siguiente botón. </p>
                     <button>
                         <i class="fa-solid fa-up-right-from-square"></i>
                         Ir al sitio
                     </button>
-                </div>
-                <div class="servicio circulacion">
+                </a>
+                <a href="https://www.sem.gob.cl/pcirc/index.php?pago_id=38&inst_id=69060500&setiframe=0" class="servicio circulacion">
                     <i class="fa-solid fa-car servicio-icon"></i>
                     <h2>Permiso de circulación</h2>
                     <p>Para acceder a la plataforma de pago, haz click en el siguiente botón</p>
@@ -123,8 +113,8 @@
                         <i class="fa-solid fa-up-right-from-square"></i>
                         Ir al sitio
                     </button>
-                </div>
-                <div class="servicio aseo">
+                </a>
+                <!-- <div class="servicio aseo">
                     <i class="fa-solid fa-trash-can servicio-icon"></i>
                     <h2>Exención de Derechos de Aseo</h2>
                     <p>Para postular a la Exención de Derechos de Aseo, haz click en el siguiente botón. </p>
@@ -132,8 +122,8 @@
                         <i class="fa-solid fa-up-right-from-square "></i>
                         Ir al sitio
                     </button>
-                </div>
-                <div class="servicio gas">
+                </div> -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_CEYFBp3SvXUyKCNWi5MCxdYaLkIXsaTBeY1aMuOoJE1rDw/viewform" class="servicio gas">
                     <i class="fa-solid fa-fire-flame-simple servicio-icon"></i>
                     <h2>Beneficio del Gas Licuado</h2>
                     <p>Para acceder a la postulación del beneficio del gas, haz click en el siguiente botón. </p>
@@ -141,9 +131,60 @@
                         <i class="fa-solid fa-up-right-from-square"></i>
                         Ir al sitio
                     </button>
-                </div>
+                </a>
             </section>
         </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="transparencia-footer">
+                    <a href="https://www.leylobby.gob.cl/instituciones/mu102" class="transparencia-btn">
+                        <div class="btn-icon">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <div class="btn-text">
+                            <span>Solicitud de audiencias</span>
+                            <span>Ley del Lobby</span>
+                        </div>
+                    </a>
+                    <a href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU102" class="transparencia-btn">
+                        <div class="btn-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <div class="btn-text">
+                            <span>Transparencia Activa</span>
+                            <span>Ley de Transparencia</span>
+                        </div>
+                    </a>
+                    <a href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU102" class="transparencia-btn">
+                        <div class="btn-icon">
+                            <i class="fa-solid fa-file"></i>
+                        </div>
+                        <div class="btn-text">
+                            <span>Solicitar información</span>
+                            <span>Ley de Transparencia</span>
+                        </div>
+                    </a>
+            </div> 
+            <div class="redes-sociales-footer">
+                <a href="https://www.facebook.com/municipalidaddehijuelas" class="icon-container">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/muni_hijuelas/" class="icon-container">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="top-cta-footer">
+                    <a href="mailto:comunicaciones@hijuelas.cl" class="correo">
+                        <i class="fa-solid fa-envelope"></i> 
+                        comunicaciones@hijuelas.cl
+                    </a>
+                    <a href="tel:332290100" class="telefono">
+                        <i class="fa-solid fa-phone"></i> 
+                        (33) 2290100
+                    </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
